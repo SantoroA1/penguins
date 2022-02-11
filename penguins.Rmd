@@ -1,0 +1,39 @@
+---
+title: "penguins"
+author: "Adam"
+date: "2/11/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE,}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+## Data
+This data set analyzes morphological features of penguins from Antarctica  
+```{r, echo=FALSE}
+library(palmerpenguins)
+library(tidyverse)
+```
+
+
+![penguin](https://i.natgeofe.com/k/88de42b8-764c-40d2-89ee-e72d55dc95b8/emperor-penguin-chicks_4x3.jpg)
+
+## Single trait distribution
+
+
+
+```{r}
+ggplot(data = penguins) +
+  geom_jitter(mapping = aes(x = bill_length_mm, y = species, color = species))
+```
+
+
+
+
+## Relationship between multiple traits
+
+## Sexual dimorphism
+
